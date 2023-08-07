@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Merriweather.ttf",
+      "sha1": "f4e7810e4e20d1932d3d7994bb6f6456280ee6bd"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk.ttf",
+      "sha1": "ac9ea6011e289ca462a9bd12e725affaefd15257"
+    }
+  ]
+}
