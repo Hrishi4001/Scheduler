@@ -3,17 +3,26 @@ import {View, Text, StyleSheet, Button, Modal, ScrollView} from 'react-native';
 import NewAgendaItem from './NewAgendaItem';
 import {Agenda} from 'react-native-calendars';
 import DateTimePicker from '@react-native-community/datetimepicker';
-
+import AnalogClock from './AnalogClock';
 const AgendaScreen = () => {
   const [agendaData, setAgendaData] = useState({
-    '2023-08-01': [
+    '2023-08-09': [
       {
-        time: '10:00 AM',
-        title: 'Meeting 1',
-        description: 'Discuss project status',
+        time: '8:00 AM',
+        title: 'Yoga',
+        description: 'Yoga Time',
+      },
+      {
+        time: '2:00 AM',
+        title: 'Movie',
+        description: 'Movie Time',
+      },
+      {
+        time: '8:00 PM',
+        title: 'Sports',
+        description: 'Sports Time',
       },
     ],
-    // More initial data
   });
 
   const [isModalVisible, setModalVisible] = useState(false);
@@ -43,7 +52,7 @@ const AgendaScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Hii</Text>
+      <AnalogClock />
       <Modal
         animationType="slide"
         transparent={false}
