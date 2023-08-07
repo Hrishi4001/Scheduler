@@ -9,12 +9,11 @@ const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <Text style={styles.container}> t</Text>
-    // <NavigationContainer>
-    //   <Stack.Navigator>
-    //     <Stack.Screen name="Agenda" component={AgendaScreen} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
+    <NavigationContainer>
+      <Stack.Navigator >
+        <Stack.Screen name="Your Schedules" component={AgendaScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 const styles = StyleSheet.create({
